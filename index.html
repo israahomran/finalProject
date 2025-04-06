@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medilink centeral hospital</title>
+    <!-- aos library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- cssLink -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="sticky-top bg-white shadow">
+        <nav class=" navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo d-flex">
+                    <a class="navbar-brand ms-10" href="#"><img src="./assets/img/logo/logo-dark.png" /></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#page1">Home (page1)</a></li>
+                                <li><a class="dropdown-item" href="#page2">Home (page2)</a></li>
+                                <li><a class="dropdown-item" href="#page3">Home (page3)</a></li>
+                                <li><a class="dropdown-item" href="#page4">Home (page4)</a></li>
+                                <li><a class="dropdown-item" href="#page5">Home (page5)</a></li>
+                                <li><a class="dropdown-item" href="#page6">Home (page6)</a></li>
+                                <li><a class="dropdown-item" href="#page7">Home (page7)</a></li>
+                                <li><a class="dropdown-item" href="#page8">Home (page8)</a></li>
+                                <li><a class="dropdown-item" href="#page9">Home (page9)</a></li>
+                                <li><a class="dropdown-item" href="#page10">Home (page10)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors.html">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="departments.html">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="appointment.html">Appointment Form</a></li>
+                                <li><a class="dropdown-item" href="pricing-plan.html">Pricing Plan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="search">
+                    <button type="button" class="btn btn-primary bg-transparent " data-bs-toggle="modal"
+                        data-bs-target="#searchModal">
+                        <i class="fa-solid fa-magnifying-glass search-icon "></i>
+                    </button>
+
+                </div>
+                <div class="appointment-btn ">
+                    <a class="btn btn-primary" href="appointment.html" role="button">Appointment</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success search" type="submit"><i
+                                class="fa-solid fa-magnifying-glass search-icon "></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--sections  -->
+    <main>
+        <section class="slider-img" id="page1">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active " data-bs-interval="3000">
+                        <img src="./assets/img/slider-img/slider_1.jpg" class=" image img-fluid d-block"
+                            data-aos="zoom-in" data-aos-once="false" data-aos-delay="50" data-aos-duration="2000"
+                            alt="doctors-img">
+                        <div class="intro fade-in" data-wow-duration="2s" data-wow-delay="2s">
+                            <div class="text">
+                                <h2 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000"> We Take Care Of
+                                    Your Healthy Health</h2>
+                                <p data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">Mimply dummy text
+                                    of the printing type setting area lead
+                                    spsum dolor onsecte dipiscing. Mimply dummy text printingapsum dolor onsecte
+                                    dipiscing.
+                                </p>
+                            </div>
+                            <a href="departments.html" class="btn-service" data-aos="fade-right" data-aos-delay="50"
+                                data-aos-duration="3000">See All Services</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/img/slider-img/slider_2-1536x560.jpg" class="image img-fluid d-block "
+                            alt="doctors-img">
+                        <div class="intro">
+                            <div class="text">
+                                <h2 class=" fade-in"> We Take Care Of Your Healthy Health</h2>
+                                <p class=" fade-in">Mimply dummy text of the printing type setting area lead
+                                    spsum dolor onsecte dipiscing. Mimply dummy text printingapsum dolor onsecte
+                                    dipiscing.
+                                </p>
+                            </div>
+                            <a href="departments.html" class="btn-service fade-in">See All Services</a>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./assets/img/slider-img/slider_3-1536x560.jpg" class=" image img-fluid d-block"
+                            alt="doctors-img">
+                        <div class="intro">
+                            <div class="text">
+                                <h2 class=" fade-in"> We Take Care Of Your Healthy Health</h2>
+                                <p class=" fade-in">Mimply dummy text of the printing type setting area lead
+                                    spsum dolor onsecte dipiscing. Mimply dummy text printingapsum dolor onsecte
+                                    dipiscing.
+                                </p>
+                            </div>
+                            <a href="departments.html" class="btn-service fade-in">See All Services</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="about" id="page2">
+            <div class="container-fluid">
+                <div class="row gx-5 gy-5">
+                    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                        <div class="about-img">
+                            <img src="./assets/img/about.png" class="img-fluid" alt="about" />
+                        </div>
+                    </div>
+                    <div class=" col-md-6  col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="about-text d-flex flex-column gap-5">
+                            <h2>Welcome To MediLink.
+                                Central Hospital</h2>
+                            <p>Mtandard dummy texr since when an unknown printer took a galley.MediPoint Lorem ipsum
+                                dolor
+                                sit
+                                amet, consetetur sadipscing elitr, At accusam aliquyam.'s standard dummy texr since when
+                                an
+                                unknown printer took a galley consetetur.</p>
+                            <div class="img">
+                                <img src="./assets/img/sign1.png" alt="sign" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="service-list d-flex flex-column gap-3">
+                            <div class="service-item">
+                                <a href="#"><i class="fa-regular fa-calendar-check"></i> Request Appointment</a>
+                            </div>
+
+                            <div class="service-item">
+                                <a href="#"><i class="fa-solid fa-user-doctor"></i> Find Doctors</a>
+                            </div>
+                            <div class="service-item">
+                                <a href="#"><i class="fa-solid fa-location-dot"></i> Find Locations</a>
+                            </div>
+                            <div class="service-item">
+                                <a href="#"><i class="fa-solid fa-phone"></i> Emergency Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="medical-services" id="page3">
+            <div class="container-fluid">
+                <div class="medical-services-header text-center">
+                    <span class="text-primary title ">Department</span>
+                    <h2>Our Medical Services</h2>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="icon">
+                                    <img src="./assets/img/services/dental-care-p.png" alt="Dental Icon">
+                                </div>
+                                <a href="#">
+                                    <h3 class="title">Dental Care</h3>
+                                </a>
+                                <p class="description">Aorem Ipsum dummy text printing setting detry bringin eight
+                                    challenges...</p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="icon">
+                                    <img src="./assets/img/services/eye-p.png" alt="Eye Care">
+                                </div>
+                                <a href="#">
+                                    <h3 class="title">Eye Care</h3>
+                                </a>
+                                <p class="description">Aorem Ipsum dummy text printing setting detry bringin eight
+                                    challenges...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="icon">
+                                    <img src="./assets/img/services/medicine-p.png" alt="Medicine">
+                                </div>
+                                <a href="#">
+                                    <h3 class="title">Medicine</h3>
+                                </a>
+                                <p class="description">Aorem Ipsum dummy text printing setting detry bringin eight
+                                    challenges...</p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="icon">
+                                    <img src="./assets/img/services/cardiogram1.png" alt="Cardiology">
+                                </div>
+                                <a href="#">
+                                    <h3 class="title">Cardiology</h3>
+                                </a>
+                                <p class="description">Aorem Ipsum dummy text printing setting detry bringin eight
+                                    challenges...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="icon">
+                                    <img src="./assets/img/services/orthopedic-p.png" alt="orthopedic">
+                                </div>
+                                <a href="#">
+                                    <h3 class="title">Orthopedic</h3>
+                                </a>
+                                <p class="description">Aorem Ipsum dummy text printing setting detry bringin eight
+                                    challenges...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination indicators -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="our-specility" id="page4">
+            <div class="container-fluid">
+                <div class="slider">
+                    <div class="our-specility-header text-center">
+                        <span class="text-primary title ">Why Choose Us</span>
+                        <h2>What’s Our Speciality</h2>
+                    </div>
+                    <div class="tabs">
+                        <button class="tab" onclick="showSlide(0)">Modern Technology</button>
+                        <button class="tab" onclick="showSlide(1)">Success of Treatments</button>
+                        <button class="tab" onclick="showSlide(2)">Certified Doctors</button>
+                    </div>
+                    <div class="slides">
+
+                        <div class="slide">
+                            <div class="row gx-5 gy-5">
+                                <div class="col-12 col-md-6">
+                                    <div class="text-section">
+                                        <h3 class="fw-bold">Certified Doctors & Using Modern Technology</h3>
+                                        <p>Borem ipsum dolor sit amet, conse ctetur adipper isicing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ae ut labore et dolore magnae. It is a long established fact that
+                                            a
+                                            reader will be distracted by the readable content of a page when looking at
+                                            its
+                                            layout.</p>
+                                        <ul>
+                                            <li><i class="fa-solid fa-circle-check"></i> Annual & Monthly Report</li>
+                                            <li><i class="fa-solid fa-circle-check"></i> Exclusive Support for permium
+                                                member
+                                            </li>
+                                            <li><i class="fa-solid fa-circle-check"></i> Discounts & Updates</li>
+                                            <li><i class="fa-solid fa-circle-check"></i> Permium member</li>
+                                        </ul>
+                                        <a href="departments.html" class="btn btn-primary fw-bold">See All Services <i
+                                                class="fa-solid fa-angles-right"></i> </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="image-section">
+                                        <img src="./assets/img/features-section/banner-1.jpg" alt="Modern Technology">
+                                        <button type="button" class="btn btn-primary bg-transparent "
+                                            data-bs-toggle="modal" data-bs-target="#SpecialityModal">
+                                            <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="row gx-5 gy-5">
+                                <div class="col-12 col-md-6">
+                                    <div class="text-section">
+                                        <h3 class="fw-bold">Together we can Achieve more things</h3>
+                                        <p>Borem ipsum dolor sit amet, conse ctetur adipper isicing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ae ut labore et dolore magnae.</p>
+                                        <ul>
+                                            <li><i class="fa-solid fa-circle-check"></i> Annual & Monthly Report</li>
+                                            <li><i class="fa-solid fa-circle-check"></i> Exclusive Support for permium
+                                                member
+                                            </li>
+                                            <li><i class="fa-solid fa-circle-check"></i> Discounts & Updates</li>
+                                        </ul>
+                                        <a href="departments.html" class="btn btn-primary fw-bold">See All Services <i
+                                                class="fa-solid fa-angles-right"></i> </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="image-section">
+                                        <img src="./assets/img/features-section/banner-2.jpg" alt="Modern Technology">
+                                        <button type="button" class="btn btn-primary bg-transparent "
+                                            data-bs-toggle="modal" data-bs-target="#SpecialityModal">
+                                            <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="row gx-5 gy-5">
+                                <div class="col-12 col-md-6 ">
+                                    <div class="text-section">
+                                        <h3 class="fw-bold">Together we can Achieve more things</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.</p>
+
+                                        <a href="departments.html" class="btn btn-primary fw-bold">See All Services <i
+                                                class="fa-solid fa-angles-right"></i> </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6  d-flex align-items-center justify-content-center ">
+                                    <div class="image-section">
+                                        <img src="./assets/img/features-section/banner-3.jpg" alt="Modern Technology">
+                                        <button type="button" class="btn btn-primary bg-transparent "
+                                            data-bs-toggle="modal" data-bs-target="#SpecialityModal">
+                                            <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Modal-specility -->
+        <div class="modal fade" id="SpecialityModal" tabindex="-1" aria-labelledby="SpecialityModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <iframe src="index.html" width="100%" height="500" frameborder="0"></iframe>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="specialist-doctors" id="page5">
+            <div class="container-fluid">
+                <div class="specialist-doctors-header text-center">
+                    <span class="text-primary title ">Meet our team</span>
+                    <h2 class="fw-bold">Specialist Doctors</h2>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="doctor-img">
+                                    <img src="./assets/img/Specialist-Doctors/doctor1.jpg" alt="Dr.Tina Rahman">
+                                    <div class="overlay">
+                                        <a href="#"><span>+</span></a>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h3 class="title">Dr.Tina Rahman</h3>
+                                </a>
+                                <p>MBBS, M.D of Medicine</p>
+                                <div class="social-link ">
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="doctor-img">
+                                    <img src="./assets/img/Specialist-Doctors/doctor2.jpg" alt="Dr.Nadim Kamal">
+                                    <div class="overlay">
+                                        <a href="#"><span>+</span></a>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h3 class="title">Dr.Nadim Kamal</h3>
+                                </a>
+                                <p>MBBS, M.D of Medicine</p>
+                                <div class="social-link ">
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="doctor-img">
+                                    <img src="./assets/img/Specialist-Doctors/doctor1.jpg" alt="Dr.Tina Rahman">
+                                    <div class="overlay">
+                                        <a href="#"><span>+</span></a>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h3 class="title">Dr.Tina Rahman</h3>
+                                </a>
+                                <p>MBBS, M.D of Medicine</p>
+                                <div class="social-link ">
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="doctor-img">
+                                    <img src="./assets/img/Specialist-Doctors/doctor2.jpg" alt="Dr.Nadim Kamal">
+                                    <div class="overlay">
+                                        <a href="#"><span>+</span></a>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h3 class="title">Dr.Nadim Kamal</h3>
+                                </a>
+                                <p>MBBS, M.D of Medicine</p>
+                                <div class="social-link ">
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="appointment" id="page6">
+            <div class="container-fluid text-center d-flex flex-column justify-content-evenly">
+                <span>Need a Doctor for Check-up?</span>
+                <h2 class="fw-bold">just make an appointment & you're done!</h2>
+                <div class="appointment-button">
+                    <a href="appointment.html" class="btn btn-primary fw-bold">Make an appointment</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="working-process" id="page7">
+            <div class="container-fluid">
+                <div class="working-process-header text-center">
+                    <span class="text-primary title ">Working Process</span>
+                    <h2 class="fw-bold">How It Helps You Stay Healthy</h2>
+                </div>
+                <div class="row gx-5  gy-5 ">
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-center align-items-center">
+                        <div class="process-item">
+                            <img src="./assets/img/working-process/Comfortable Care.png" alt="Comfortable Care">
+                            <h3><a href="#">Comfortable Care</a></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6  d-flex justify-content-center align-items-center">
+                        <div class="process-item">
+                            <img src="./assets/img/working-process/Consultation.jpg" alt="Consultation">
+                            <h3><a href="#">Consultation</a></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6  d-flex justify-content-center align-items-center  ">
+                        <div class="process-item">
+                            <img src="./assets/img/working-process/Highest Quality.jpg" alt="Highest Quality">
+                            <h3><a href="#">Highest Quality</a></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-center align-items-center">
+                        <div class="process-item">
+                            <img src="./assets/img/working-process/Always Smiling.jpg" alt="Always Smiling">
+                            <h3><a href="#">Always Smiling</a></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistics shadow" id="page8">
+            <div class="container-fluid">
+                <div class="row gx-5 gy-5">
+                    <div class="col-6 col-sm-3">
+                        <div class="stat-item">
+                            <img src="./assets/img/statistics/experience.png" alt="Years of Experience Img">
+                            <div class="count" data-target="22">0</div>
+                            <p class="fw-bold">Years of Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="stat-item">
+                            <img src="./assets/img/statistics/specialist.png" alt="Medical Specialist Img">
+                            <div class="count" data-target="390">0</div>
+                            <p class="fw-bold">Medical Specialists</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="stat-item">
+                            <img src="./assets/img/statistics/rooms.png" alt="Modern Rooms Img">
+                            <div class="count" data-target="559">0</div>
+                            <p class="fw-bold">Modern Rooms</p>
+                        </div>
+                    </div>
+                    <div class=" col-6 col-sm-3 ">
+                        <div class="stat-item">
+                            <img src="./assets/img/statistics/happy_patients.png" alt="Happy Patients Img">
+                            <div class="count" data-target="6930">0</div>
+                            <p class="fw-bold">Happy Patients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial" id="page9">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="testimonial-background">
+                            <div class="testimonial-card fade-in">
+                                <img src="./assets/img/testimonial/testimonial1.jpg" alt="Profile Picture"
+                                    class="profile-image">
+                                <p class="testimonial-text">
+                                    Rimply dummy text of the printing and timply dummy text of the printing and
+                                    typesetting industry psum has been the industry. Rimply dummy text the area theire
+                                    printing and Rimply dummy text of the printing.
+                                </p>
+                                <h3 class="profile-name fw-bold">Robert Adison</h3>
+                                <p class="profile-title">Professor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-background">
+                            <div class="testimonial-card fade-in">
+                                <img src="./assets/img/testimonial/testimonial2.jpg" alt="Profile Picture"
+                                    class="profile-image">
+                                <p class="testimonial-text">
+                                    Rimply dummy text of the printing and timply dummy text of the printing and
+                                    typesetting industry psum has been the industry. Rimply dummy text the area theire
+                                    printing and Rimply dummy text of the printing.
+                                </p>
+                                <h3 class="profile-name fw-bold">Robert Adison</h3>
+                                <p class="profile-title">Professor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="news" id="page10">
+            <div class="container-fluid">
+                <div class="news-header text-center">
+                    <span class="text-primary title ">Articles</span>
+                    <h2 class="fw-bold">Our Latest News</h2>
+                </div>
+                <div class="row gy-5">
+                    <div class="col-md-4 ">
+                        <div class="news-card">
+                            <img src="./assets/img/news/blog1.jpg" alt="News Image" class="news-image">
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span> November
+                                    12, 2018 <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                </div>
+                                <h3 class="news-title">In our clinic discounts for a full inspection</h3>
+                                <p class="news-description">
+                                    Fummy text of the printing and type news setting industrs standard known printing
+                                    and typenews...
+                                </p>
+                                <div class="news-footer d-flex justify-content-between align-items-center">
+                                    <a href="blog.html" class="read-more">Read More →</a>
+                                    <div class="comments"><a href="#"><i class="fa-solid fa-comments"></i> </a>0</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <img src="./assets/img/news/blog2.jpg" alt="News Image" class="news-image">
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span> November
+                                    12, 2018 <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                </div>
+                                <h3 class="news-title">Medical Records are Safe Your now a days.</h3>
+                                <p class="news-description">
+                                    Fummy text of the printing and type news setting industrs standard known printing
+                                    and typenews...
+                                </p>
+                                <div class="news-footer d-flex justify-content-between align-items-center">
+                                    <a href="blog.html" class="read-more">Read More →</a>
+                                    <div class="comments"><a href="#"><i class="fa-solid fa-comments"></i> </a>0</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <img src="./assets/img/news/blog3.jpg" alt="News Image" class="news-image">
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span> November
+                                    12, 2018 <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                </div>
+                                <h3 class="news-title">Office In our clinic discounts for a full inspection</h3>
+                                <p class="news-description">
+                                    Fummy text of the printing and type news setting industrs standard known printing
+                                    and typenews...
+                                </p>
+                                <div class="news-footer d-flex justify-content-between align-items-center">
+                                    <a href="blog.html" class="read-more">Read More →</a>
+                                    <div class="comments"><a href="#"><i class="fa-solid fa-comments"></i> </a>0</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+
+            <div class="footer-logo">
+                <img src="./assets/img/logo/logo-light.png" alt="MediLink Logo">
+                <p>We are ipsum dolor sit amet aeaett consectetur adipiscing elit, sed diam nonummy.</p>
+                <p><i class="fas fa-map-marker-alt"></i> 59 Street, 1200 Techpark.</p>
+                <p><i class="fas fa-phone"></i> +59888555</p>
+                <p><i class="fas fa-envelope"></i> medilink@gmail.com</p>
+            </div>
+
+            <div class="footer-links">
+                <h2>Departments</h2>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Success Story</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Success Story</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-hours">
+                <h2>Opening Hours</h2>
+                <ul>
+                    <li>Monday: 09:00 am - 10:00 pm</li>
+                    <li>Tuesday: 09:00 am - 10:00 pm</li>
+                    <li>Wednesday: 09:00 am - 10:00 pm</li>
+                    <li>Thursday: 09:00 am - 10:00 pm</li>
+                    <li>Friday: 09:00 am - 10:00 pm</li>
+                    <li>Saturday: <span class="closed">Closed</span></li>
+                    <li>Sunday: <span class="closed">Closed</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2024 MediLink. All Rights Reserved by <a href="#">RadiusTheme</a></p>
+        </div>
+    </footer>
+
+    <!-- count up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+
+    <!-- Aos javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main js -->
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
